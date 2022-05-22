@@ -24,3 +24,9 @@ multiplication, x-nor and nor), I have designed a 1 bit ALU unit first. This ALU
 unit can execute all these four operations between two input bits and
 generates 1 bit output. The desired output is selected with the help of a 4x1
 mux that has a 2 bit selection line, used as operation code
+
+<b>Operation code</b>
+&nbsp; &nbsp; &nbsp; 00 --> Addition
+&nbsp; &nbsp; &nbsp; 01 --> Multiplication
+&nbsp; &nbsp; &nbsp; 10 --> X-nor
+&nbsp; &nbsp; &nbsp; 11 --> Nor
