@@ -39,7 +39,7 @@ mux that has a 2 bit selection line, used as operation code
 The same 1 bit ALU is used to design a 17 bit ALU, so that it can
 execute operations on 17 bit operands and generate a 17 bit output
 
-<b>17 bit  Register File --> </b>
+<b>17 bit  Register File </b>
 I have used a 17 bit register file for storing data that are
 used the operations in ALU. So, data will be read from here to execute an
 instruction, and data may be stored into register after instructions like load
@@ -69,26 +69,26 @@ output can be written into register via the write data line.
 In the designed datapath, there is no ALU control, and control unit. So, R type
 and I type instructions are selected manually.
 
-<b>Instruction Description</b>
+<b>Instruction Description</b><br>
 <b>ADD:</b> It adds two register values and stores the result into destination
 register.<br>
 Operation: RD = RS + RT<br>
 Assembly code: add RD RS RT.<br>
-MULT: It multiplies two register values and stores the result into the
-destination register.
-Operation: RD = RS * RT
-Assembly code: mult RD RS RT.
-X-nor: Performs x-nor operation between two register values and stores the
-result into destination register.
-Operation: RD = RS X-nor RT
-Assembly code: x-nor RD RS RT.
-nor: Performs nor operation between two register values and stores the
-result into destination register.
-Operation: RD = RS nor RT
-Assembly code: nor RD RS RT.Lw: Loads value from an effective memory address write it back to the
-destination register.
-Operation: RD = Memory [RD+immediate]
-Assembly code: lw RD RS immediate.
-Sw: It stores value from register to an effective memory address.
-Operation: Memory [RT + immediate] = RS
-Assembly code: sw RS RT immediate.
+<b>MULT:</b> It multiplies two register values and stores the result into the
+destination register.<br>
+Operation: RD = RS * RT<br>
+Assembly code: mult RD RS RT.<br>
+<b>X-nor:</b> Performs x-nor operation between two register values and stores the
+result into destination register.<br>
+Operation: RD = RS X-nor RT<br>
+Assembly code: x-nor RD RS RT.<br>
+<b>nor:</b> Performs nor operation between two register values and stores the
+result into destination register.<br>
+Operation: RD = RS nor RT<br>
+Assembly code: nor RD RS RT.<br>
+<b>Lw:</b> Loads value from an effective memory address write it back to the destination register.<br>
+Operation: RD = Memory [RD+immediate]<br>
+Assembly code: lw RD RS immediate.<br>
+<b>Sw:</b> It stores value from register to an effective memory address.<br>
+Operation: Memory [RT + immediate] = RS<br>
+Assembly code: sw RS RT immediate.<br>
