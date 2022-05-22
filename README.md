@@ -19,7 +19,7 @@ and I type instruction. The operations that I have been given are ADD
 objective is to design a logisim circuit that can execute these instructions.
  
  # Design Process
-     <b>1 bit Arithmetic Logic Unit:</b> As I have given 4 operations (addition,
+<b>1 bit Arithmetic Logic Unit:</b> As I have given 4 operations (addition,
 multiplication, x-nor and nor), I have designed a 1 bit ALU unit first. This ALU
 unit can execute all these four operations between two input bits and
 generates 1 bit output. The desired output is selected with the help of a 4x1
