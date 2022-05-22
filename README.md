@@ -70,7 +70,7 @@ In the designed datapath, there is no ALU control, and control unit. So, R type
 and I type instructions are selected manually.
 
 <p align="center">
-  <img height="300" width="800" src="https://user-images.githubusercontent.com/63312173/169713788-39dd6c00-d2ee-412b-a3ad-51551a8e96ae.png">
+  <img height="300" width="650" src="https://user-images.githubusercontent.com/63312173/169713788-39dd6c00-d2ee-412b-a3ad-51551a8e96ae.png">
 </p>
 
 # Instruction Description
