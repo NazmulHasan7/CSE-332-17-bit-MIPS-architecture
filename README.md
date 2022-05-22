@@ -69,26 +69,30 @@ output can be written into register via the write data line.
 In the designed datapath, there is no ALU control, and control unit. So, R type
 and I type instructions are selected manually.
 
-<b>Instruction Description</b><br>
+<p align="center">
+  <img height="500" width="500" src="https://user-images.githubusercontent.com/63312173/169713788-39dd6c00-d2ee-412b-a3ad-51551a8e96ae.png">
+</p>
+
+# Instruction Description
 <b>ADD:</b> It adds two register values and stores the result into destination
 register.<br>
 Operation: RD = RS + RT<br>
-Assembly code: add RD RS RT.<br>
+Assembly code: add RD RS RT.<br><br>
 <b>MULT:</b> It multiplies two register values and stores the result into the
 destination register.<br>
 Operation: RD = RS * RT<br>
-Assembly code: mult RD RS RT.<br>
+Assembly code: mult RD RS RT.<br><br>
 <b>X-nor:</b> Performs x-nor operation between two register values and stores the
 result into destination register.<br>
 Operation: RD = RS X-nor RT<br>
-Assembly code: x-nor RD RS RT.<br>
+Assembly code: x-nor RD RS RT.<br><br>
 <b>nor:</b> Performs nor operation between two register values and stores the
 result into destination register.<br>
 Operation: RD = RS nor RT<br>
-Assembly code: nor RD RS RT.<br>
+Assembly code: nor RD RS RT.<br><br>
 <b>Lw:</b> Loads value from an effective memory address write it back to the destination register.<br>
 Operation: RD = Memory [RD+immediate]<br>
-Assembly code: lw RD RS immediate.<br>
+Assembly code: lw RD RS immediate.<br><br>
 <b>Sw:</b> It stores value from register to an effective memory address.<br>
 Operation: Memory [RT + immediate] = RS<br>
 Assembly code: sw RS RT immediate.<br>
