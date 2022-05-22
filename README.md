@@ -35,15 +35,37 @@ mux that has a 2 bit selection line, used as operation code
 &nbsp; &nbsp; &nbsp; 10 --> X-nor<br>
 &nbsp; &nbsp; &nbsp; 11 --> Nor<br>
 
-<b>17 bit ALU: </b>
+<b>17 bit ALU --> </b>
 The same 1 bit ALU is used to design a 17 bit ALU, so that it can
 execute operations on 17 bit operands and generate a 17 bit output
 
-<b>17 bit  Register File:</b>
+<b>17 bit  Register File --> </b>
 I have used a 17 bit register file for storing data that are
 used the operations in ALU. So, data will be read from here to execute an
 instruction, and data may be stored into register after instructions like load
 and R type instructions. The register file has RS, RT and RD that are used to
 select source and destination registers while decoding an instruction.
 
-<b>ISA</b>
+<p align="center">
+  <img height="700" width="500" src="https://user-images.githubusercontent.com/63312173/169713610-d7837e4f-0dde-4f11-bf35-da4de7f6c82a.png">
+</p>
+
+<b>ISA --> </b>My ISA bit is 17 bits. I have divided it into 4 parts<br>
+Bits 0-3 are for RD (4 bits),<br>
+Bits 4-7 are for RT (4 bits),<br>
+Bits 8-11 are for RS (4 bits),<br>
+Bit 12-16 are for Opcode (5 bits).<br>
+
+<b> Datapath Design --> </b> It has five stages: fetch, decode, execute, memory access and write back. Fetch unit is for fetching instruction with the help of PC.
+Instructions are given into the ROM. For every clock pulse, the next
+instruction is fetched. A fetched instruction is then decoded and separated
+into RS, RT, RD and Opcode. Based on the type of instruction, RS, RT, RD are
+connected to the register file (for R type), or RS, RT are connected to register
+file (for I type). Based on the data of RS and RT registers, ALU executes
+different instructions. It is the execution unit. Generated result can be stored
+on the register (for R type), or an effective memory address can be produced
+(for I type instruction). It is done in memory access stage. ALU produced
+output can be written into register via the write data line.
+In the designed datapath, there is no ALU control, and control unit. So, R type
+and I type instructions are selected manually.
+
