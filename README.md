@@ -26,16 +26,16 @@ generates 1 bit output. The desired output is selected with the help of a 4x1
 mux that has a 2 bit selection line, used as operation code
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/63312173/169713429-292ef2ed-b83d-4c7f-8efe-68e7ddcab20e.png">
+  <img height="300" width="300" src="https://user-images.githubusercontent.com/63312173/169713429-292ef2ed-b83d-4c7f-8efe-68e7ddcab20e.png">
 </p>
 
-<b>Operation code</b>
+<b>Operation code</b><br>
 &nbsp; &nbsp; &nbsp; 00 --> Addition<br>
 &nbsp; &nbsp; &nbsp; 01 --> Multiplication<br>
 &nbsp; &nbsp; &nbsp; 10 --> X-nor<br>
 &nbsp; &nbsp; &nbsp; 11 --> Nor<br>
 
-<b>17 bit ALU</b>
+<b>17 bit ALU: </b>
 The same 1 bit ALU is used to design a 17 bit ALU, so that it can
 execute operations on 17 bit operands and generate a 17 bit output
 
