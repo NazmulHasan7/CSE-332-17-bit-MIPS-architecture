@@ -1,4 +1,4 @@
-# CSE-332-17-bit-MIPS-architecture
+# <i>CSE-332-17-bit-MIPS-architecture
     CSE332 Computer System Architecture - 17 bit MIPS architecture
 <p align="center">
    NORTH SOUTH UNIVERSITY<br>
@@ -95,4 +95,4 @@ Operation: RD = Memory [RD+immediate]<br>
 Assembly code: lw RD RS immediate.<br><br>
 <b>Sw:</b> It stores value from register to an effective memory address.<br>
 Operation: Memory [RT + immediate] = RS<br>
-Assembly code: sw RS RT immediate.<br>
+Assembly code: sw RS RT immediate.<br></i>
